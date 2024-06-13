@@ -18,7 +18,7 @@ class DataType(Base):
 class Reactor(Base):
     __tablename__ = 'reactors'
     id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
+    name = Column(String, nullable=False, unique=True)
     platform_type_id = Column(Integer, ForeignKey('platform_types.id'))
     platform_type = relationship("PlatformType")
 
