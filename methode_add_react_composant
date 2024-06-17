@@ -1,0 +1,7 @@
+1 . Initialiser le projet React :
+npx create-react-app my-react-components
+2. Modifier src/App.js et src/index.js pour inclure votre composant
+3. compiler le projet :
+npm run build
+4. Copier le fichier build/static/js/main.<hash>.js dans le dossier DataWarehouse\Reac_component_py
+avec le composant js et le code python qui map le composant js
